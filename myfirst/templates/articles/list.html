@@ -5,7 +5,7 @@ New articles
 {% block content %}
 {% if latest_articles_list %}
 {% for a in latest_articles_list %}
-<div>
+<div class="container">
     <h2><a href="{% url 'articles:detail' a.id %}">{{a.article_title}}</a></h2>
     <p>{{a.article_text}}</p>
     <p>{{a.pub_date}}</p>
